@@ -51,8 +51,8 @@ const boxAnimationVariants = {
 		opacity: 1,
 		x: 0,
 		transition: {
-			delay: 1,
-			duration: 1,
+			delay: 0.25,
+			duration: 0.75,
 		},
 	},
 }
@@ -64,7 +64,7 @@ const imgAnimationVariants = {
 	animate: {
 		opacity: 1,
 		transition: {
-			delay: 2,
+			delay: 1,
 			duration: 1,
 		},
 	},
@@ -95,7 +95,7 @@ const Details = ({ currentColor, setCurrentColor }: Props) => {
 			initial='initial'
 			animate='animate'
 			variants={boxAnimationVariants}
-			className='relative h-[30.25rem] w-[95%] xl:w-[49.375rem] lg:w-[60vw] lg:ml-auto lg:mr-[5vw] rounded-[45px] bg-details-bg backdrop-filter backdrop-blur-[62px] z-50'
+			className='relative top-10 md:top-0 min-h-[30.25rem] w-[95%] pb-5 xl:w-[49.375rem] lg:w-[60vw] lg:ml-auto lg:mr-[5vw] rounded-[45px] bg-details-bg backdrop-filter backdrop-blur-[62px] z-50'
 		>
 			<motion.img
 				initial='initial'
@@ -103,9 +103,9 @@ const Details = ({ currentColor, setCurrentColor }: Props) => {
 				variants={imgAnimationVariants}
 				src={currentImg}
 				alt='Image of a controller'
-				className='absolute -right-2 top-14 md:top-20 w-[55vw] lg:right-[34rem] lg:top-0 lg:w-[50vw] -z-50'
+				className='absolute -top-[42vw] right-7 w-[95%] md:top-5 md:w-[55vw] lg:right-[34rem] lg:top-0 lg:w-[50vw] -z-50'
 			/>
-			<div className='lg:w-[75%] lg:h-full pl-5 lg:pl-3 lg:ml-auto'>
+			<div className='pt-[20%] md:pt-0 lg:w-[75%] lg:h-full pl-5 lg:pl-3 lg:ml-auto'>
 				<div>
 					<h1 className='text-[3.5rem] md:text-[4.5rem] font-bold leading-[3rem] py-4 md:py-0 md:leading-normal'>
 						Dual Sense
@@ -114,7 +114,7 @@ const Details = ({ currentColor, setCurrentColor }: Props) => {
 						Wireless Controller
 					</p>
 				</div>
-				<p className='my-[1.7rem]'>$40.00</p>
+				<p className='my-2 md:my-[1.7rem]'>$40.00</p>
 				<div className='flex'>
 					<p className='text-[0.9375rem] font-medium'>Colors : </p>
 					<div className='flex items-center gap-3 ml-4'>
@@ -132,7 +132,7 @@ const Details = ({ currentColor, setCurrentColor }: Props) => {
 						})}
 					</div>
 				</div>
-				<p className='w-full md:w-[23rem] lg:w-[25.5rem] pr-5 md:h-[6.5rem] text-[0.875rem] font-medium leading-[163.5%] mt-10 md:mt-[1.5rem] bg-black/20 rounded md:bg-transparent'>
+				<p className='w-full md:w-[23rem] lg:w-[25.5rem] pr-5 md:h-[6.5rem] text-[0.875rem] font-medium leading-[163.5%] mt-[5vw] md:mt-[1.5rem]'>
 					Wireless Gaming Controller, Joystick Gamepad with Dual-Vibration PC
 					Game Controller Compatible with PS5, Switch, Windows 10/8/7 PC,
 					Laptop, TV Box, Android Mobile Phones, 6.5 ft USB Cable
